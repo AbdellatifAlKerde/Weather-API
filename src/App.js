@@ -10,11 +10,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Karim"
+      name: "Karim",
     };
   }
 
-  handleInputChange = value => {
+  handleInputChange = (value) => {
     this.setState({ name: value });
   };
 
@@ -24,6 +24,7 @@ class App extends Component {
         <SayHi />
         <SayHello color="black" name={this.state.name} />
         <Search handleInput={this.handleInputChange} />
+        <p>Abdellatif Al Kerde</p>
       </div>
     );
   }
